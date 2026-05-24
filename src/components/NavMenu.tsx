@@ -16,6 +16,11 @@ import {
   FileText,
   Menu,
   X,
+  KeyRound,
+  Binary,
+  Link as LinkIcon,
+  BookOpen,
+  Hash,
 } from "lucide-react";
 
 const tools = [
@@ -30,6 +35,11 @@ const tools = [
   { href: "/og-preview", label: "OG Preview", Icon: Eye, color: "text-indigo-400" },
   { href: "/timestamp-converter", label: "Timestamp", Icon: Timer, color: "text-teal-400" },
   { href: "/pdf-tools", label: "PDF Tools", Icon: FileText, color: "text-red-400" },
+  { href: "/jwt-decoder", label: "JWT Decoder", Icon: KeyRound, color: "text-orange-400" },
+  { href: "/base64-encoder", label: "Base64 Encoder", Icon: Binary, color: "text-cyan-400" },
+  { href: "/url-encoder", label: "URL Encoder", Icon: LinkIcon, color: "text-emerald-400" },
+  { href: "/markdown-preview", label: "Markdown Preview", Icon: BookOpen, color: "text-purple-400" },
+  { href: "/hash-generator", label: "Hash Generator", Icon: Hash, color: "text-rose-400" },
 ];
 
 export function NavMenu() {

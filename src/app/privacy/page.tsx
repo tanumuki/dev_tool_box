@@ -253,7 +253,7 @@ export default function PrivacyPage() {
               If you have questions about this privacy policy, you can reach us
               by opening an issue on our{" "}
               <a
-                href="https://github.com/tanumuki/dev_tool_box"
+                href="https://github.com/YOUR_USERNAME/devtoolbox"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 underline decoration-blue-400/30 hover:decoration-blue-400"

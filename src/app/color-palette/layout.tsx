@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Color Palette Generator — Create & Extract Colors",
+  title: "Color Palette Generator — HEX RGB HSL & WCAG Contrast Free",
   description:
-    "Pick colors, generate harmonious palettes, check WCAG contrast ratios. Supports HEX, RGB, HSL, HSV, CMYK. Free, runs in browser.",
+    "Free color palette generator. Create harmonious palettes, convert HEX/RGB/HSL, and check WCAG contrast ratios. No sign-up required.",
+  alternates: {
+    canonical: "https://devtoolboxes.net/color-palette",
+  },
+  openGraph: {
+    title: "Color Palette Generator — HEX RGB HSL & WCAG Contrast Free",
+    description:
+      "Free color palette generator. Create harmonious palettes, convert HEX/RGB/HSL, and check WCAG contrast ratios. No sign-up required.",
+  },
 };
 
 export default function ColorPaletteLayout({

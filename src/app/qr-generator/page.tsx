@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import QRCode from "qrcode";
 import Link from "next/link";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -541,6 +542,7 @@ export default function QrGeneratorPage() {
           </div>
         </div>
       </main>
+      <ToolPageFooter toolId="qr-generator" />
     </div>
   );
 }

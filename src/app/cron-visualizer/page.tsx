@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo, useEffect } from "react";
 import cronstrue from "cronstrue";
 import Link from "next/link";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -705,6 +706,7 @@ export default function CronVisualizerPage() {
           )}
         </div>
       </main>
+      <ToolPageFooter toolId="cron-visualizer" />
     </div>
   );
 }

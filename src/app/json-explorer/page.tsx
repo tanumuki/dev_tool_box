@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { diffJson } from "diff";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -863,6 +864,7 @@ export default function JsonExplorerPage() {
           </div>
         )}
       </main>
+      <ToolPageFooter toolId="json-explorer" />
     </div>
   );
 }

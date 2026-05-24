@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PDF Tools — Merge, Split, Compress & Convert PDFs Free",
+  title: "PDF Tools — Merge, Split & Compress PDFs Online Free",
   description:
-    "Merge, split, compress, rotate, reorder PDFs and convert to images. 100% client-side — your files never leave your browser. Free, no sign-up.",
+    "Free PDF tools. Merge, split, compress, rotate, and watermark PDFs in your browser. Your files never leave your device. No sign-up.",
   keywords: [
     "merge pdf",
     "split pdf",
@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     "watermark pdf",
     "extract text pdf",
   ],
+  alternates: {
+    canonical: "https://devtoolboxes.net/pdf-tools",
+  },
+  openGraph: {
+    title: "PDF Tools — Merge, Split & Compress PDFs Online Free",
+    description:
+      "Free PDF tools. Merge, split, compress, rotate, and watermark PDFs in your browser. Your files never leave your device. No sign-up.",
+  },
 };
 
 export default function PdfToolsLayout({

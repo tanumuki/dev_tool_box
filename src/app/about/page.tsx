@@ -52,7 +52,7 @@ const PRINCIPLES = [
   },
 ];
 
-const TOOLS_COUNT = 11;
+const TOOLS_COUNT = 16;
 
 export default function AboutPage() {
   return (

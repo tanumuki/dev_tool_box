@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 /* ──────────────────────────────────────────────
    Types
@@ -1193,6 +1194,7 @@ export default function RegexPlayground() {
           </div>
         </main>
       </div>
+      <ToolPageFooter toolId="regex-playground" />
     </div>
   );
 }

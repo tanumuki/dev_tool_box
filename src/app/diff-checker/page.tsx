@@ -2,6 +2,7 @@
 
 import React, { useState, useCallback, useMemo, useRef } from "react";
 import { diffLines, diffChars, Change } from "diff";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -943,6 +944,7 @@ export default function DiffCheckerPage() {
           </div>
         )}
       </main>
+      <ToolPageFooter toolId="diff-checker" />
     </div>
   );
 }

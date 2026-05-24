@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -707,6 +708,7 @@ export default function OgPreviewPage() {
           Built with Next.js, Tailwind CSS, and zero external dependencies. Everything runs in your browser.
         </div>
       </footer>
+      <ToolPageFooter toolId="og-preview" />
     </div>
   );
 }

@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "DevToolBox — Free Developer Tools",
     short_name: "DevToolBox",
-    description: "11 free, fast, private tools for developers and creators.",
+    description: "16 free, fast, private tools for developers and creators.",
     start_url: "/",
     display: "standalone",
     background_color: "#030712",

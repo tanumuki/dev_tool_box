@@ -55,7 +55,7 @@ const FEATURES = [
 ];
 
 const STATS = [
-  { value: "11", label: "Tools" },
+  { value: "16", label: "Tools" },
   { value: "100%", label: "Free" },
   { value: "0", label: "Servers" },
   { value: "0", label: "Trackers" },
@@ -108,7 +108,7 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg font-medium text-slate-200 sm:text-xl">
-            11 beautifully crafted tools for developers and creators.
+            16 beautifully crafted tools for developers and creators.
           </p>
 
           <p className="mx-auto mt-3 max-w-xl text-base text-slate-400">

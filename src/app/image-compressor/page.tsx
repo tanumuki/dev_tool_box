@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -540,6 +541,7 @@ export default function ImageCompressorPage() {
           50% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.08); }
         }
       `}} />
+      <ToolPageFooter toolId="image-compressor" />
     </div>
   );
 }

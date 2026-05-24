@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Diff Checker — Compare Text, JSON & Code Side by Side",
+  title: "Diff Checker — Compare Text & Code Online Free",
   description:
-    "Compare two texts with character-level highlighting. JSON-aware diff ignores key order. Side-by-side and inline views. Free, runs in browser.",
+    "Free online diff checker. Compare two texts side by side with character-level highlighting. No uploads, no sign-up. Works offline.",
+  alternates: {
+    canonical: "https://devtoolboxes.net/diff-checker",
+  },
+  openGraph: {
+    title: "Diff Checker — Compare Text & Code Online Free",
+    description:
+      "Free online diff checker. Compare two texts side by side with character-level highlighting. No uploads, no sign-up. Works offline.",
+  },
 };
 
 export default function DiffCheckerLayout({

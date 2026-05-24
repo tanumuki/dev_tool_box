@@ -10,6 +10,7 @@ import {
 } from "react";
 import Link from "next/link";
 import { PDFDocument, rgb, StandardFonts, degrees } from "pdf-lib";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 // ─── PDF.js lazy loader ─────────────────────────────────────────────────────
 
@@ -334,6 +335,7 @@ export default function PdfToolsPage() {
           {activeTab === "extract" && <ExtractTextTab />}
         </div>
       </div>
+      <ToolPageFooter toolId="pdf-tools" />
     </div>
   );
 }

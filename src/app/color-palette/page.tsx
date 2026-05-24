@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import { colord, extend } from "colord";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 import harmoniesPlugin from "colord/plugins/harmonies";
 import a11yPlugin from "colord/plugins/a11y";
 import cmykPlugin from "colord/plugins/cmyk";
@@ -423,6 +424,7 @@ export default function ColorPalettePage() {
           </div>
         </div>
       </div>
+      <ToolPageFooter toolId="color-palette" />
     </div>
   );
 }

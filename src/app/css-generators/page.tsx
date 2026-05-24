@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -752,6 +753,7 @@ export default function CssGeneratorsPage() {
           {tab === "glass" && <GlassmorphismTab />}
         </div>
       </div>
+      <ToolPageFooter toolId="css-generators" />
     </div>
   );
 }

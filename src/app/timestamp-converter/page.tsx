@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react";
 import Link from "next/link";
+import { ToolPageFooter } from "@/components/ToolPageFooter";
 
 /* ------------------------------------------------------------------ */
 /*  Timezone data                                                      */
@@ -569,6 +570,7 @@ export default function TimestampConverterPage() {
           )}
         </div>
       </main>
+      <ToolPageFooter toolId="timestamp-converter" />
     </div>
   );
 }

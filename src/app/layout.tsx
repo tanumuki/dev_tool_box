@@ -38,11 +38,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://devtoolboxes.net"),
   title: {
-    default: "DevToolBox — 11 Free Tools for Developers & Creators",
+    default: "DevToolBox — 16 Free Tools for Developers & Creators",
     template: "%s | DevToolBox",
   },
   description:
-    "Fast, beautiful, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF and more. No sign-up. No tracking. No uploads.",
+    "Fast, beautiful, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF, JWT, Base64, hashing and more. No sign-up. No tracking. No uploads.",
   keywords: [
     "developer tools",
     "JSON formatter",
@@ -64,17 +64,17 @@ export const metadata: Metadata = {
     "client-side tools",
   ],
   openGraph: {
-    title: "DevToolBox — 11 Free Tools for Developers & Creators",
+    title: "DevToolBox — 16 Free Tools for Developers & Creators",
     description:
-      "Fast, private, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF and more.",
+      "Fast, private, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF, JWT, Base64, hashing and more.",
     type: "website",
     siteName: "DevToolBox",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevToolBox — 11 Free Tools for Developers & Creators",
+    title: "DevToolBox — 16 Free Tools for Developers & Creators",
     description:
-      "Fast, private, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF and more.",
+      "Fast, private, client-side tools that work offline. JSON, regex, diff, cron, CSS, QR, PDF, JWT, Base64, hashing and more.",
   },
   robots: {
     index: true,
@@ -85,6 +85,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  alternates: {
+    canonical: "https://devtoolboxes.net",
   },
 };
 
@@ -107,14 +110,57 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Google AdSense — replace YOUR_ADSENSE_CLIENT_ID with your ca-pub-XXXXX */}
-        {/* Uncomment the line below after AdSense approval */}
+        {/* Preconnect — shaves 100-300ms off first load for external resources */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+        {/* Google AdSense */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9790074481240768" crossOrigin="anonymous"></script>
 
-        {/* Google Analytics — replace G-P9LHJ259C1 with your G-XXXXX */}
-        {/* Uncomment the two blocks below after creating your GA4 property */}
+        {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9LHJ259C1"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-P9LHJ259C1');` }} />
+
+        {/* JSON-LD: Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "DevToolBox",
+              url: "https://devtoolboxes.net",
+              logo: "https://devtoolboxes.net/favicon.ico",
+              description: "Free, fast, private developer tools that run 100% in your browser.",
+              sameAs: ["https://github.com/tanumuki/dev_tool_box"],
+            }),
+          }}
+        />
+
+        {/* JSON-LD: WebSite with SearchAction (enables Google Sitelinks Searchbox) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "DevToolBox",
+              url: "https://devtoolboxes.net",
+              description: "16 free, fast, private tools for developers and creators. 100% client-side.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://devtoolboxes.net/tools?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-[#030712] text-slate-100">
         {/* Navigation */}
@@ -176,7 +222,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t border-slate-800/50 bg-[#030712]">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
               {/* Brand */}
               <div className="lg:col-span-2">
                 <Link href="/" className="flex items-center gap-2">
@@ -188,7 +234,7 @@ export default function RootLayout({
                   </span>
                 </Link>
                 <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-500">
-                  11 free, fast, private tools for developers and creators.
+                  16 free, fast, private tools for developers and creators.
                   Everything runs in your browser. Nothing gets uploaded.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
@@ -278,6 +324,54 @@ export default function RootLayout({
                       className="text-slate-500 transition-colors hover:text-slate-200"
                     >
                       Color Palette
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-400">
+                  New Tools
+                </h4>
+                <ul className="mt-4 space-y-2.5 text-sm">
+                  <li>
+                    <Link
+                      href="/jwt-decoder"
+                      className="text-slate-500 transition-colors hover:text-slate-200"
+                    >
+                      JWT Decoder
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/base64-encoder"
+                      className="text-slate-500 transition-colors hover:text-slate-200"
+                    >
+                      Base64 Encoder
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/url-encoder"
+                      className="text-slate-500 transition-colors hover:text-slate-200"
+                    >
+                      URL Encoder
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/markdown-preview"
+                      className="text-slate-500 transition-colors hover:text-slate-200"
+                    >
+                      Markdown Preview
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/hash-generator"
+                      className="text-slate-500 transition-colors hover:text-slate-200"
+                    >
+                      Hash Generator
                     </Link>
                   </li>
                 </ul>
