@@ -111,10 +111,10 @@ export default function RootLayout({
         {/* Uncomment the line below after AdSense approval */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9790074481240768" crossOrigin="anonymous"></script>
 
-        {/* Google Analytics — replace YOUR_GA_MEASUREMENT_ID with your G-XXXXX */}
+        {/* Google Analytics — replace G-P9LHJ259C1 with your G-XXXXX */}
         {/* Uncomment the two blocks below after creating your GA4 property */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_MEASUREMENT_ID"></script> */}
-        {/* <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','YOUR_GA_MEASUREMENT_ID');` }} /> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9LHJ259C1"></script>
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-P9LHJ259C1');` }} />
       </head>
       <body className="min-h-full flex flex-col bg-[#030712] text-slate-100">
         {/* Navigation */}
