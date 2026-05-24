@@ -176,7 +176,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               <a
-                href="https://github.com/YOUR_USERNAME/devtoolbox"
+                href="https://github.com/tanumuki/dev_tool_box"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-700/50 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-200 backdrop-blur-sm transition-all hover:bg-white/10 hover:scale-[1.02]"

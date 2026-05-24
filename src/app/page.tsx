@@ -127,7 +127,7 @@ export default function Home() {
               <ArrowDown className="relative h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </Link>
             <a
-              href="https://github.com/YOUR_USERNAME/devtoolbox"
+              href="https://github.com/tanumuki/dev_tool_box"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-slate-700/50 bg-white/5 px-7 py-3 text-sm font-semibold text-slate-200 backdrop-blur-sm transition-all hover:bg-white/10 hover:scale-[1.02]"

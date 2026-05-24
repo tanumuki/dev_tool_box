@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://devtoolbox.dev/sitemap.xml",
+    sitemap: "https://devtoolboxes.net/sitemap.xml",
   };
 }

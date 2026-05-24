@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://devtoolbox.dev";
+  const base = "https://devtoolboxes.net";
   const lastModified = new Date();
 
   const routes = [

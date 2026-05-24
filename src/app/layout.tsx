@@ -36,7 +36,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devtoolbox.dev"),
+  metadataBase: new URL("https://devtoolboxes.net"),
   title: {
     default: "DevToolBox — 11 Free Tools for Developers & Creators",
     template: "%s | DevToolBox",
@@ -154,7 +154,7 @@ export default function RootLayout({
                 </Link>
                 <div className="ml-3 h-5 w-px bg-slate-700/50" />
                 <a
-                  href="https://github.com/YOUR_USERNAME/devtoolbox"
+                  href="https://github.com/tanumuki/dev_tool_box"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-3 flex h-9 w-9 items-center justify-center rounded-xl text-slate-400 transition-colors hover:bg-white/5 hover:text-slate-200"
@@ -291,7 +291,7 @@ export default function RootLayout({
               </p>
               <div className="flex items-center gap-4 text-xs text-slate-600">
                 <a
-                  href="https://github.com/YOUR_USERNAME/devtoolbox"
+                  href="https://github.com/tanumuki/dev_tool_box"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-slate-400"
