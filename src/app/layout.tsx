@@ -109,7 +109,7 @@ export default function RootLayout({
       <head>
         {/* Google AdSense — replace YOUR_ADSENSE_CLIENT_ID with your ca-pub-XXXXX */}
         {/* Uncomment the line below after AdSense approval */}
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_ADSENSE_CLIENT_ID" crossOrigin="anonymous"></script> */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9790074481240768" crossOrigin="anonymous"></script>
 
         {/* Google Analytics — replace YOUR_GA_MEASUREMENT_ID with your G-XXXXX */}
         {/* Uncomment the two blocks below after creating your GA4 property */}
